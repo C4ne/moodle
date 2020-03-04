@@ -633,6 +633,9 @@ $message-drawer-width: 320px;
         }
         .message-app.main {
             height: 100%;
+            @if $enable-rounded {
+                border-radius: $border-radius;
+            }
         }
     }
 }
