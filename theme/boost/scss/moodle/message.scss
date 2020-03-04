@@ -649,6 +649,9 @@ $message-day-color: color-yiq($message-app-bg) !default;
         }
         .message-app.main {
             height: 100%;
+            @if $enable-rounded {
+                border-radius: $border-radius;
+            }
         }
     }
 }
